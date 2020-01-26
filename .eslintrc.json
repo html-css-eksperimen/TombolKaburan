@@ -1,0 +1,30 @@
+{
+    "env": {
+        "browser": true,
+        "es6": true,
+        "node": true
+    },
+    "extends": [
+        "airbnb",
+        "prettier",
+        "eslint:recommended"
+       // "plugin:node/recommended" // hilangkan jika error eslint muncul
+    ],
+    "plugins": ["prettier"],
+    "parserOptions": {
+        "ecmaVersion": 9,
+        "sourceType": "module"
+    },
+    "rules": {
+        "prettier/prettier": "error",
+        "no-unused-vars": "warn",
+        "no-console": "warn",
+        "func-names": "off",
+        "no-process-exit": "warn",
+        "object-shorthand": "warn",
+        "class-methods-use-this": "warn",
+        "semi": "error",
+        "comma-dangle": "error",
+        "no-restricted-syntax": "warn"
+    }
+}
